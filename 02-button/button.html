@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="par1">filler</p>
+<p id="par2">filler</p>
+<p id="par3">filler</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<button onclick="getElementById('par3').innerHTML=Date()">Try something else</button>
+
+<script>
+function myFunction() {
+
+    document.getElementById("par1").innerHTML = "Hello";
+
+    var p2 = document.getElementById("par2");
+    p2.innerHTML = "Steve";
+
+    document.getElementById("par3").innerHTML = "Perry";
+}
+</script>
+
+</body>
+</html>
+
