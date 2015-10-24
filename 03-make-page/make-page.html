@@ -1,0 +1,108 @@
+<html>
+<body>
+
+<style>
+table {
+  width: 50%;
+  border: 5px solid black;
+}
+td {
+  border: 3px solid red;
+}
+</style>
+
+<script>
+
+  var head1 = document.createElement("h1");
+  head1.appendChild(document.createTextNode("Make a page with JavaScript"));
+  document.body.appendChild(head1);
+    
+  var par1 = document.createElement("p");
+  var txt = document.createTextNode("Hello Bob");
+  par1.appendChild(txt);
+  document.body.appendChild(par1);
+
+  var par2 = document.createElement("p");
+  par2.appendChild(document.createTextNode("Hello Steve"));
+  document.body.appendChild(par2);
+
+  var par3 = document.createElement("p");
+  par3.appendChild(document.createTextNode("Hello Sam"));
+  par3.style.color = "red";
+  par3.style.backgroundColor = "silver";
+  par3.style.fontSize = "x-large";
+  document.body.appendChild(par3);
+
+  var par = document.createElement("p");
+  par.appendChild(document.createTextNode("Every story has a:"));
+  document.body.appendChild(par);
+
+  var list = document.createElement("ol");
+
+  var elem = document.createElement("li");
+  elem.appendChild(document.createTextNode("Beginning"));
+  list.appendChild(elem);
+
+  var elem = document.createElement("li");
+  elem.appendChild(document.createTextNode("Middle"));
+  list.appendChild(elem);
+
+  var elem = document.createElement("li");
+  elem.appendChild(document.createTextNode("End"));
+  list.appendChild(elem);
+
+  document.body.appendChild(list);
+
+  par = document.createElement("p");
+  par.appendChild(document.createTextNode("Here are the four essentials:"));
+  document.body.appendChild(par);
+
+  var list = document.createElement("ul");
+
+  var elem = document.createElement("li");
+  elem.appendChild(document.createTextNode("Foam pad"));
+  list.appendChild(elem);
+
+  var elem = document.createElement("li");
+  elem.appendChild(document.createTextNode("Mole skin"));
+  list.appendChild(elem);
+
+  var elem = document.createElement("li");
+  elem.appendChild(document.createTextNode("Cup"));
+  list.appendChild(elem);
+
+  var elem = document.createElement("li");
+  elem.appendChild(document.createTextNode("Spoon"));
+  list.appendChild(elem);
+
+  document.body.appendChild(list);
+
+  
+  var tbl = document.createElement("table");
+  
+  // First row
+  var row = document.createElement("tr");
+  var col = document.createElement("td");
+  col.appendChild(document.createTextNode("Steve"));
+  row.appendChild(col);
+  col = document.createElement("td");
+  col.appendChild(document.createTextNode("62"));
+  row.appendChild(col);
+  tbl.appendChild(row);
+
+  // Second row
+  row = document.createElement("tr");
+  col = document.createElement("td");
+  col.appendChild(document.createTextNode("Nick"));
+  row.appendChild(col);
+  col = document.createElement("td");
+  col.appendChild(document.createTextNode("23"));
+  row.appendChild(col);
+  tbl.appendChild(row);
+
+  document.body.appendChild(tbl);
+
+</script>
+
+</body>
+</html>
