@@ -1,0 +1,67 @@
+<html>
+<body>
+
+<style>
+
+#recipe {
+  background-color: red;
+  width: 50%;
+  color: white;
+}
+
+</style>
+
+<div id="recipe">
+
+<input type="checkbox" onClick="toggleDry()">Put dry ingredients in a bowl.</p> 
+
+<div id="dry">
+  <ul>
+    <li>Sugar</li>
+    <li>Flour</li>  
+  </ul>
+</div>
+
+<input type="checkbox" onClick="toggleLiquid()">Add liquid ingredients.</p> 
+
+<div id="liquid">
+  <ul>
+    <li>Milk</li>
+    <li>Vanilla</li>  
+  </ul>
+</div>
+
+</div>
+
+<script>
+ 
+  var dryVisible = 1;
+
+  function toggleDry()
+  {
+    if(dryVisible) {
+      document.getElementById("dry").style.display = "none";
+      dryVisible = 0;
+    } else {
+      document.getElementById("dry").style.display = "block";
+      dryVisible = 1;
+    }
+  }
+
+  var liquidVisible = 1;
+
+  function toggleLiquid()
+  {
+    if(liquidVisible) {
+      document.getElementById("liquid").style.display = "none";
+      liquidVisible = 0;
+    } else {
+      document.getElementById("liquid").style.display = "block";
+      liquidVisible = 1;
+    }
+  }
+
+</script>
+
+</body>
+</html>
