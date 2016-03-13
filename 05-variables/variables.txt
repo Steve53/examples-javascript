@@ -1,0 +1,112 @@
+In the Chrome brower, press F12 to open the dev tools.
+Open the Console tab.
+
+JavaScript has these datatypes:
+String
+Number
+Boolean
+Null
+Undefined
+Object
+
+---------------------------------
+String
+
+s = "Hello Steve"
+"Hello Steve"
+t = "Perry"
+"Perry"
+s + " " + t
+"Hello Steve Perry"
+
+typeof s
+"string"
+typeof(s)
+"string"
+
+s.length
+11
+
+s.charAt(1)
+"e"
+
+s.toUpperCase()
+"HELLO STEVE"
+
+n = "Bob"
+"Bob"
+n += " Jones"
+"Bob Jones"
+
+----------------------------------
+Number
+
+a = 5		SHIFT-ENTER
+b = 6.3		SHIFT-ENTER
+a + 2*b		ENTER
+17.6
+
+typeof a
+"number"
+typeof(b)
+"number"
+
+----------------------------------
+Boolean
+
+a = true
+true
+b = false
+false
+typeof a
+"boolean"
+typeof b
+"boolean"
+
+----------------------------------
+Null
+
+q = null
+null
+typeof q
+"object"	
+
+----------------------------------
+Undefined
+
+typeof g
+"undefined"
+
+---------------------------------
+Object
+
+person = {}
+Object {}
+person.lastName = "Perry"
+"Perry"
+person.firstName = "Steve"
+"Steve"
+person.age = 62
+62
+person.increaseAge = function() {
+  this.age++;
+}
+() {
+  this.age++;
+}
+person
+Object {lastName: "Perry", firstName: "Steve", age: 62}
+
+person.increaseAge
+() {
+  this.age++;
+}
+person.increaseAge()
+undefined
+person
+Object {lastName: "Perry", firstName: "Steve", age: 63}
+
+person.firstName
+"Steve"
+person['firstName']
+"Steve"
