@@ -1,0 +1,62 @@
+person = {}
+
+person.firstName = "Steve"
+person.lastName = "Perry"
+person.age = 62
+
+person.address = {}
+
+person.address.number= 678
+person.address.street = "Broadway"
+
+person.increaseAge = function() {
+  this.age++
+}
+
+str = JSON.stringify(person)
+
+-------------------------------------
+
+obj = JSON.parse(str)
+
+-------------------------------------
+
+Object.prototype.isPrototypeOf(person)
+
+-------------------------------------
+
+person = {
+  getFullName(){return this.firstName+" "+this.lastName;},
+  increaseAge(){this.age++}
+}
+
+function extend(obj) {
+  function E(){};
+  E.prototype = obj;
+  return new E();
+}
+
+sp = extend(person);
+
+sp.firstName = "Steve";
+sp.lastName = "Perry";
+sp.age = 62;
+sp.getFullName();
+
+-------------------------------------
+
+sp.increaseAge()
+sp
+
+-------------------------------------
+
+object.getPrototypeOf(sp)
+
+------------------------------------- 
+
+
+
+
+
+
+
