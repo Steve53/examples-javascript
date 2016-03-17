@@ -1,0 +1,22 @@
+function divide100By(num) {
+  if (num == 0) {
+    throw {code:1, message:"Cannot divide by 0"};
+  }
+
+  return 100/num;
+}
+
+divide100By(5);
+
+-----------------------------------
+
+divide100By(0);
+
+-----------------------------------
+
+try {
+  divide100By(0);
+}
+catch(e) {
+  console.log(e.code + ": " + e.message);
+}

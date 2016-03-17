@@ -90,6 +90,28 @@ add(3, 5, 7)
     
 --------------------------------
 
+function steve() {
+  var age = 60;
+
+  return function () {
+    return ++age;
+  }
+}
+
+increaseAge = steve();
+
+increaseAge();
+
+--------------------------------
+
+increaseAge();
+
+--------------------------------
+
+increaseAge2 = steve();
+
+increaseAge2();
+
 
 
 
